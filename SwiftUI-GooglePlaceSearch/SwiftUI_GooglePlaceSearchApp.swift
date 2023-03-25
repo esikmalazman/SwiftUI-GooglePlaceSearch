@@ -6,12 +6,23 @@
 //
 
 import SwiftUI
+import GooglePlaces
 
 @main
 struct SwiftUI_GooglePlaceSearchApp: App {
+    init() {
+        setupGooglePlace()
+    }
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
+    }
+}
+
+private extension SwiftUI_GooglePlaceSearchApp {
+    func setupGooglePlace() {
+        GMSPlacesClient.provideAPIKey(APIKey)
     }
 }

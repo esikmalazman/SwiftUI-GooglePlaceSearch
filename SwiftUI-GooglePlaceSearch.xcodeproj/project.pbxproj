@@ -11,6 +11,16 @@
 		7F9DD31F29CEC1A600DC1CA4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9DD31E29CEC1A600DC1CA4 /* ContentView.swift */; };
 		7F9DD32129CEC1A800DC1CA4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F9DD32029CEC1A800DC1CA4 /* Assets.xcassets */; };
 		7F9DD32429CEC1A800DC1CA4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F9DD32329CEC1A800DC1CA4 /* Preview Assets.xcassets */; };
+		7F9DD40029CEC73F00DC1CA4 /* GooglePlaces.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9DD3FF29CEC73F00DC1CA4 /* GooglePlaces.xcframework */; };
+		7F9DD40329CEC7E700DC1CA4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9DD40229CEC7E700DC1CA4 /* CoreGraphics.framework */; };
+		7F9DD40529CEC7EF00DC1CA4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9DD40429CEC7EF00DC1CA4 /* CoreLocation.framework */; };
+		7F9DD40729CEC7FA00DC1CA4 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9DD40629CEC7FA00DC1CA4 /* libc++.tbd */; };
+		7F9DD40929CEC80400DC1CA4 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9DD40829CEC80400DC1CA4 /* libz.tbd */; };
+		7F9DD40B29CEC80C00DC1CA4 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9DD40A29CEC80C00DC1CA4 /* QuartzCore.framework */; };
+		7F9DD40D29CEC81200DC1CA4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F9DD40C29CEC81200DC1CA4 /* UIKit.framework */; };
+		7F9DD40F29CEC8DC00DC1CA4 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9DD40E29CEC8DC00DC1CA4 /* Secrets.swift */; };
+		7F9DD41229CEDC6100DC1CA4 /* GooglePlaces.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 7F9DD41129CEDC6100DC1CA4 /* GooglePlaces.bundle */; };
+		7F9DD41429CEE3A000DC1CA4 /* PlaceSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F9DD41329CEE3A000DC1CA4 /* PlaceSearch.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +29,16 @@
 		7F9DD31E29CEC1A600DC1CA4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		7F9DD32029CEC1A800DC1CA4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7F9DD32329CEC1A800DC1CA4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7F9DD3FF29CEC73F00DC1CA4 /* GooglePlaces.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = GooglePlaces.xcframework; sourceTree = "<group>"; };
+		7F9DD40229CEC7E700DC1CA4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		7F9DD40429CEC7EF00DC1CA4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		7F9DD40629CEC7FA00DC1CA4 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		7F9DD40829CEC80400DC1CA4 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		7F9DD40A29CEC80C00DC1CA4 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		7F9DD40C29CEC81200DC1CA4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		7F9DD40E29CEC8DC00DC1CA4 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
+		7F9DD41129CEDC6100DC1CA4 /* GooglePlaces.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GooglePlaces.bundle; path = "GooglePlaces.xcframework/ios-arm64/GooglePlaces.framework/Resources/GooglePlaces.bundle"; sourceTree = "<group>"; };
+		7F9DD41329CEE3A000DC1CA4 /* PlaceSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceSearch.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +46,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F9DD40D29CEC81200DC1CA4 /* UIKit.framework in Frameworks */,
+				7F9DD40B29CEC80C00DC1CA4 /* QuartzCore.framework in Frameworks */,
+				7F9DD40929CEC80400DC1CA4 /* libz.tbd in Frameworks */,
+				7F9DD40729CEC7FA00DC1CA4 /* libc++.tbd in Frameworks */,
+				7F9DD40529CEC7EF00DC1CA4 /* CoreLocation.framework in Frameworks */,
+				7F9DD40329CEC7E700DC1CA4 /* CoreGraphics.framework in Frameworks */,
+				7F9DD40029CEC73F00DC1CA4 /* GooglePlaces.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +62,10 @@
 		7F9DD31029CEC1A600DC1CA4 = {
 			isa = PBXGroup;
 			children = (
+				7F9DD32A29CEC6F100DC1CA4 /* Static Frameworks */,
 				7F9DD31B29CEC1A600DC1CA4 /* SwiftUI-GooglePlaceSearch */,
 				7F9DD31A29CEC1A600DC1CA4 /* Products */,
+				7F9DD40129CEC7E700DC1CA4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,6 +84,8 @@
 				7F9DD31E29CEC1A600DC1CA4 /* ContentView.swift */,
 				7F9DD32029CEC1A800DC1CA4 /* Assets.xcassets */,
 				7F9DD32229CEC1A800DC1CA4 /* Preview Content */,
+				7F9DD40E29CEC8DC00DC1CA4 /* Secrets.swift */,
+				7F9DD41329CEE3A000DC1CA4 /* PlaceSearch.swift */,
 			);
 			path = "SwiftUI-GooglePlaceSearch";
 			sourceTree = "<group>";
@@ -65,6 +96,28 @@
 				7F9DD32329CEC1A800DC1CA4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7F9DD32A29CEC6F100DC1CA4 /* Static Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F9DD41129CEDC6100DC1CA4 /* GooglePlaces.bundle */,
+				7F9DD3FF29CEC73F00DC1CA4 /* GooglePlaces.xcframework */,
+			);
+			path = "Static Frameworks";
+			sourceTree = "<group>";
+		};
+		7F9DD40129CEC7E700DC1CA4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F9DD40C29CEC81200DC1CA4 /* UIKit.framework */,
+				7F9DD40A29CEC80C00DC1CA4 /* QuartzCore.framework */,
+				7F9DD40829CEC80400DC1CA4 /* libz.tbd */,
+				7F9DD40629CEC7FA00DC1CA4 /* libc++.tbd */,
+				7F9DD40429CEC7EF00DC1CA4 /* CoreLocation.framework */,
+				7F9DD40229CEC7E700DC1CA4 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -109,6 +162,47 @@
 			knownRegions = (
 				en,
 				Base,
+				de,
+				he,
+				en_AU,
+				ar,
+				el,
+				ja,
+				uk,
+				es_419,
+				es_MX,
+				zh_CN,
+				nb,
+				es,
+				pt_BR,
+				da,
+				it,
+				sk,
+				pt_PT,
+				ms,
+				sv,
+				cs,
+				en_IN,
+				ko,
+				hu,
+				zh_HK,
+				tr,
+				pl,
+				zh_TW,
+				en_GB,
+				vi,
+				ru,
+				fr_CA,
+				fr,
+				fi,
+				id,
+				nl,
+				th,
+				pt,
+				ro,
+				hr,
+				hi,
+				ca,
 			);
 			mainGroup = 7F9DD31029CEC1A600DC1CA4;
 			productRefGroup = 7F9DD31A29CEC1A600DC1CA4 /* Products */;
@@ -126,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F9DD32429CEC1A800DC1CA4 /* Preview Assets.xcassets in Resources */,
+				7F9DD41229CEDC6100DC1CA4 /* GooglePlaces.bundle in Resources */,
 				7F9DD32129CEC1A800DC1CA4 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +233,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F9DD31F29CEC1A600DC1CA4 /* ContentView.swift in Sources */,
+				7F9DD40F29CEC8DC00DC1CA4 /* Secrets.swift in Sources */,
 				7F9DD31D29CEC1A600DC1CA4 /* SwiftUI_GooglePlaceSearchApp.swift in Sources */,
+				7F9DD41429CEE3A000DC1CA4 /* PlaceSearch.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,6 +296,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -252,6 +350,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
