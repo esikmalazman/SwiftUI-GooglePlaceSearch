@@ -8,14 +8,34 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State var locationQuery : String = ""
+    @StateObject var locationHandler = PlaceSearch()
+    
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
+        NavigationView {
+            VStack {
+                emptyStateView
+            }
+            .padding()
+            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        }
+        .searchable(text: $locationQuery) {
+            ForEach(locationHandler.searchedLocation, id: \.self) { place in
+                Text(place)
+            }
+        }
+        .onChange(of: locationQuery) { query in
+            locationHandler.searchLocation(query)
+        }
+    }
+    
+    var emptyStateView : some View {
+        HStack {
+            Image(systemName: "location.viewfinder")
                 .imageScale(.large)
                 .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Text("Where do you wanna go?")
         }
-        .padding()
     }
 }
 
